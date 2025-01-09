@@ -11,6 +11,7 @@ return new class extends Migration
         Schema::create('tb_user', function (Blueprint $table) {
             $table->unsignedBigInteger('nrp_karyawan')->primary();
             $table->string('nama');
+            $table->string('password');
             $table->string('seksi');
             $table->string('departement');
             $table->string('level');
