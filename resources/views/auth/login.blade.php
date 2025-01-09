@@ -53,7 +53,7 @@
                 <form action="{{ route('logins.auth') }}" method="POST">
                     @csrf
                     <div class="form-group">
-                        <label>Username <span style="color:red;">*</span></label>
+                        <label>Nrp Karyawan <span style="color:red;">*</span></label>
                         <input type="text" class="form-control" value="{{ old('Username') }}" id="Username" name="Username" required>
                     </div>
 
@@ -61,13 +61,9 @@
                         <label>Kata Sandi <span style="color:red;">*</span></label>
                         <input type="password" class="form-control" id="Password" name="Password" required>
                     </div>
-                    
-                    <div class="form-group">
-                        <p>Masuk Sebagai Mahasiswa ?<a href="{{ route('logins.loginMahasiswa') }}" style="color: #1767b1"> Klik Disini</a></p>
-                    </div>
 
                     <div class="text-center">                    
-                        <a href="{{ route('dashboard') }}" class="btn btn-danger ">Kembali</a>
+                        <a href="" class="btn btn-danger ">Kembali</a>
                         <button type="submit" class="btn btn-primary">Masuk</button>                
                     </div>
                     
